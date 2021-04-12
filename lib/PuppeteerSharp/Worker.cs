@@ -71,6 +71,12 @@ namespace PuppeteerSharp
         public string Url { get; }
 
         /// <summary>
+        /// Gets the Worker URL.
+        /// </summary>
+        /// <value>Worker Client.</value>
+        public CDPSession Client => _client;
+
+        /// <summary>
         /// Executes a script in browser context
         /// </summary>
         /// <typeparam name="T">The type to deserialize the result to</typeparam>
